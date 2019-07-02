@@ -1,6 +1,6 @@
 Win64
 PlayerPath?
-C:/Users/sin/Desktop/build_060619/VeLM.exe
+C:/Users/sin/Desktop/build_020719/VeLM.exe
 SceneListBegin?
 Assets/Scenes/MainMenu.unity
 Assets/Scenes/Fire01.unity
