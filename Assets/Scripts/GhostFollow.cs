@@ -1,9 +1,10 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-
 public class GhostFollow : MonoBehaviour
 {
+
+    public Transform target;
 
     public float moveSpeed = 5f;
     public float stoppingDistance;
@@ -11,8 +12,6 @@ public class GhostFollow : MonoBehaviour
     public float defaultX = 1f;
     public float defaultY = 3.2f;
     bool isRight = true;
-
-    public Transform target;
 
     void Update() {
 

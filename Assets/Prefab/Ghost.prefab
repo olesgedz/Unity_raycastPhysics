@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3133904828012916821}
   - component: {fileID: 3133904828012916820}
   - component: {fileID: 3133904828012916818}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Ghost
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -92,7 +92,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ad6dd5bf8d1bc544bdbfd61608ba573, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5
+  moveSpeed: 6
   stoppingDistance: 0
   defaultX: 1
   defaultY: 3.2

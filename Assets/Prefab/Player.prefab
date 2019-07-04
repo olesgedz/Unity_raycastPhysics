@@ -95,17 +95,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d243ccf66996a7347bf0720fce4893aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxJumpHeight: 4
+  maxJumpHeight: 5
   minJumpHeight: 1
   timeToJumpApex: 0.4
-  moveSpeed: 6
+  moveSpeed: 10
   wallJumpClimb: {x: 7.5, y: 18}
   wallJumpOff: {x: 8.5, y: 7}
   wallLeap: {x: 5, y: 17}
   wallSlideSpeedMax: 3
   wallStickTime: 0.25
-  maxHealth: 4
-  health: 4
 --- !u!61 &9185469175528788186
 BoxCollider2D:
   m_ObjectHideFlags: 0
