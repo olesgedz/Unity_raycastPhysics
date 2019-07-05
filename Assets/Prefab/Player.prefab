@@ -72,7 +72,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: c1e829c20ea9e9f4fa8bf02fb7c45b33, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 12270b00d902343deb7b92d7dd34581d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -104,6 +104,8 @@ MonoBehaviour:
   wallLeap: {x: 5, y: 17}
   wallSlideSpeedMax: 3
   wallStickTime: 0.25
+  velocity: {x: 0, y: 0, z: 0}
+  animator: {fileID: 0}
 --- !u!61 &9185469175528788186
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -117,11 +119,11 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.4}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.56, y: 5.12}
+    oldSize: {x: 11.01, y: 6.11}
     newSize: {x: 2.56, y: 5.12}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -164,3 +166,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d3b7c9f0ce27ca4da0d6c159fee9e0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 0}

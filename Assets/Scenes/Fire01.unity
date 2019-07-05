@@ -3967,7 +3967,7 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 1127615047}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 996870031}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 366d4d69cbdd07b4484e990c22b15c06, type: 3}
@@ -13817,6 +13817,31 @@ Animator:
     type: 3}
   m_PrefabInstance: {fileID: 916363675}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &996870031 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9185469175528788185, guid: 10524fff285aa6f4ba9392b5dfa31873,
+    type: 3}
+  m_PrefabInstance: {fileID: 1127615047}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &996870032
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 996870031}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: daf19bb58c95540e7a97f6454728c63b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!43 &1002400457
 Mesh:
   m_ObjectHideFlags: 0
@@ -14768,6 +14793,11 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 9185469175528788184, guid: 10524fff285aa6f4ba9392b5dfa31873,
+        type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 996870032}
     - target: {fileID: 9185469175528788133, guid: 10524fff285aa6f4ba9392b5dfa31873,
         type: 3}
       propertyPath: maxHealth
@@ -14778,6 +14808,11 @@ PrefabInstance:
       propertyPath: health
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 9185469175528788133, guid: 10524fff285aa6f4ba9392b5dfa31873,
+        type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 996870032}
     - target: {fileID: 4994236876202864634, guid: 10524fff285aa6f4ba9392b5dfa31873,
         type: 3}
       propertyPath: hearths.Array.size

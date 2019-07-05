@@ -11,7 +11,7 @@ public class Player : MonoBehaviour
     public float timeToJumpApex = .4f;
     float accelerationTimeAirborne = .2f;
     float accelerationTimeGrounded = .1f;
-    public float moveSpeed = 6;
+    public float moveSpeed = 10;
 
     public Vector2 wallJumpClimb;
     public Vector2 wallJumpOff;
@@ -24,7 +24,7 @@ public class Player : MonoBehaviour
     float gravity;
     float maxJumpVelocity;
     float minJumpVelocity;
-    Vector3 velocity;
+    public Vector3 velocity;
     float velocityXSmoothing;
 
     Controller2D controller;
@@ -65,20 +65,7 @@ public class Player : MonoBehaviour
             }
         }
 
-        Vector3 characterScale = transform.localScale;
-        if (Input.GetAxis("Horizontal") < 0)
-        {
-            characterScale.x = -1;
-        }
-        if (Input.GetAxis("Horizontal") > 0)
-        {
-            characterScale.x = 1;
-        }
-        transform.localScale = characterScale;
     }
-
-
-     
 
     public void SetDirectionalInput(Vector2 input)
     {
@@ -163,7 +150,6 @@ public class Player : MonoBehaviour
             }
         }
     }
-    
 
     void CalculateVelocity()
     {
