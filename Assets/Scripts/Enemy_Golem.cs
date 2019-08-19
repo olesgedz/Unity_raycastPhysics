@@ -3,6 +3,8 @@ using System.Collections;
 
 public class Enemy_Golem : MonoBehaviour
 {
+    public float golemHealth = 10;
+    public float golemHit = 2;
     public LayerMask LayerMask;
     public float golemSpeed = 5;
     Rigidbody2D golemBody;
@@ -30,7 +32,7 @@ public class Enemy_Golem : MonoBehaviour
 
         if (!isGrounded || isBlocked)
         {
-           if (myVel.y >= 0.0f)
+           if (myVel.y >= .0f)
             {
                 Vector3 currRot = golemTrans.eulerAngles;
                 currRot.y += 180;

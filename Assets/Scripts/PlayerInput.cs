@@ -51,7 +51,7 @@ public class PlayerInput : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Tab))
         {
-                    animator.SetTrigger("Attack");
+            animator.SetTrigger("Attack");
         }
 
         Vector2 directionalInput = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));

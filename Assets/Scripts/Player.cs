@@ -5,7 +5,9 @@ using System.Collections;
 [RequireComponent(typeof(PlayerInput))]
 public class Player : MonoBehaviour
 {
-
+    public float playerHealth = 10;
+    public float playerHit = 2;
+    
     public float maxJumpHeight = 4;
     public float minJumpHeight = 1;
     public float timeToJumpApex = .4f;
@@ -24,7 +26,7 @@ public class Player : MonoBehaviour
     float gravity;
     float maxJumpVelocity;
     float minJumpVelocity;
-    public Vector3 velocity;
+    Vector3 velocity;
     float velocityXSmoothing;
 
     Controller2D controller;
@@ -43,7 +45,6 @@ public class Player : MonoBehaviour
         gravity = -(2 * maxJumpHeight) / Mathf.Pow(timeToJumpApex, 2);
         maxJumpVelocity = Mathf.Abs(gravity) * timeToJumpApex;
         minJumpVelocity = Mathf.Sqrt(2 * Mathf.Abs(gravity) * minJumpHeight);
-
     }
 
     void Update()
@@ -64,7 +65,6 @@ public class Player : MonoBehaviour
                 velocity.y = 0;
             }
         }
-
     }
 
     public void SetDirectionalInput(Vector2 input)
@@ -97,7 +97,7 @@ public class Player : MonoBehaviour
             if (controller.collisions.slidingDownMaxSlope)
             {
                 if (directionalInput.x != -Mathf.Sign(controller.collisions.slopeNormal.x))
-                { // not jumping against max slope
+                {
                     velocity.y = maxJumpVelocity * controller.collisions.slopeNormal.y;
                     velocity.x = maxJumpVelocity * controller.collisions.slopeNormal.x;
                 }
