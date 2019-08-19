@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class MainMenu : MonoBehaviour
 {
     public Button newGameButton;
-    public Button loadGameButton;
+    public Button OptionsButton;
     public Button exitButton;
 
     public string newGameSceneName;
@@ -17,7 +17,7 @@ public class MainMenu : MonoBehaviour
     public void Awake()
     {
         newGameButton.onClick.AddListener(NewGame);
-        loadGameButton.onClick.AddListener(OpenLoadGameMenu);
+        OptionsButton.onClick.AddListener(OpenOptionsMenu);
         exitButton.onClick.AddListener(ExitGame);
         optionsMenu.SetActive(false);
     }
@@ -28,7 +28,7 @@ public class MainMenu : MonoBehaviour
         FindObjectOfType<ProgressSceneLoader>().LoadScene(newGameSceneName);
     }
 
-    public void OpenLoadGameMenu()
+    public void OpenOptionsMenu()
     {
         optionsMenu.SetActive(true);
     }

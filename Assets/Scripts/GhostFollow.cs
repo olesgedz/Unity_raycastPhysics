@@ -15,7 +15,6 @@ public class GhostFollow : MonoBehaviour
 
     void Update() {
 
-
         Vector2 characterScale = transform.localScale;
         Vector2 characterPosition = transform.position;
 

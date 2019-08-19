@@ -3,8 +3,9 @@ PlayerPath?
 /Users/antonsiniugin/Desktop/111.app
 SceneListBegin?
 Assets/Scenes/MainMenu.unity
-Assets/Scenes/Level1.unity
 Assets/Scenes/Fire01.unity
+Assets/Scenes/Level1.unity
+Assets/Scenes/forTests.unity
 SceneListEnd?
 984dcc0ba3707b7691fbdca8ff508d28 Unity.TextMeshPro.dll:TMPro.TMP_SelectionCaret
 01aa15e337e3a9c62f15153dfac6d589 Unity.TextMeshPro.dll:TMPro.TMP_Dropdown
@@ -20,7 +21,6 @@ e1bbf0ab858085e38fae6b12ebbdcd35 UnityEngine.Timeline.dll:UnityEngine.Timeline.C
 e1bbf0ab858085e38fae6b12ebbdcd35 UnityEngine.Timeline.dll:UnityEngine.Timeline.GroupTrack
 e1bbf0ab858085e38fae6b12ebbdcd35 UnityEngine.Timeline.dll:UnityEngine.Timeline.PlayableTrack
 201e3fde670b00545944bb3db215c80a UnityEngine.Timeline.dll:UnityEngine.Timeline.TimelineAsset
-ccc8fb3d2814242d61f51e37a8e0a7ca Assembly-CSharp.dll:.PlayerHealth
 e7a73f5f78ba6445195ec23b74a1ce2d Unity.TextMeshPro.dll:TMPro.TMP_ScrollbarEventHandler
 71bb6a6b6c8f052f948db64c7dd3ca4f UnityEngine.Advertisements.Editor.dll:UnityEngine.Advertisements.Editor.Placeholder
 cf9f5cf2c3145a37ac07f00e50e460f9 UnityEngine.UI.dll:UnityEngine.UI.AspectRatioFitter
@@ -57,6 +57,7 @@ abf1930d8126d0b2e00e9449129a0190 UnityEngine.UI.dll:UnityEngine.EventSystems.Tou
 64e54c0cbb0177c5ea26f340efb9ff85 UnityEngine.UI.dll:UnityEngine.UI.VerticalLayoutGroup
 4e803053c9aa2fd013771e544bf48dd5 Assembly-CSharp.dll:.Ferr2DT_PathTerrain
 98ad81e9f689a492509f07e75b810aaa Unity.TextMeshPro.dll:TMPro.TMP_InputField
+9d638664d88c5583e7824db0c1f13ea0 Assembly-CSharp.dll:.DialogueManager
 cf9f5cf2c3145a37ac07f00e50e460f9 UnityEngine.UI.dll:UnityEngine.UI.AspectRatioFitter
 71bb6a6b6c8f052f948db64c7dd3ca4f UnityEngine.UI.dll:UnityEngine.EventSystems.BaseInput
 5fc094978ce3e3591a7500ed380d854a UnityEngine.UI.dll:UnityEngine.UI.Button
@@ -124,9 +125,9 @@ d251bf88db6c95a6b1aa0b69298da9ef UnityEngine.SpatialTracking.dll:UnityEngine.Spa
 970295cb989653b27520587973d14ee4 Assembly-CSharp.dll:Ferr.Juice
 03f635f1a00bb802c8c9ec99d78b8b9a Assembly-CSharp.dll:Ferr.Example.InfiniteTerrainChunk
 0eeb947436311edd8797be2eb658487d Assembly-CSharp.dll:Ferr.Example.InfiniteTerrain
-3fd110af4eee9ef18a61c644568dee12 Assembly-CSharp.dll:.MainMenu
+f4d9e40c268fa66877e78fec1f80286d Assembly-CSharp.dll:.MainMenu
 b3ab2106268377ffe25dd18ac23dca28 Unity.TextMeshPro.dll:TMPro.TMP_Asset
-317d2bd3403bda5b160ad35de1e91069 Assembly-CSharp.dll:.Player
+dc3d59acd276379620d9a1a1204a3452 Assembly-CSharp.dll:.Player
 c61183d2cf8c185174960b65bcd57105 Assembly-CSharp.dll:Ferr.Example.InfiniteTerrainCamera
 71bb6a6b6c8f052f948db64c7dd3ca4f Unity.Analytics.Editor.dll:UnityEditor.Analytics.AnalyticsEventTrackerEditor
 71bb6a6b6c8f052f948db64c7dd3ca4f Unity.TextMeshPro.dll:TMPro.TMP_SpriteAnimator
@@ -169,13 +170,14 @@ fb6a1ea36b4f6ef5948d283d93760765 UnityEngine.GoogleAudioSpatializer.dll:UnityEng
 5b0391b7e3d9ea9db6c0a8fbd0ca23f6 UnityEngine.GoogleAudioSpatializer.dll:UnityEngine.Experimental.Audio.Google.GvrAudioSoundfieldExtension
 5b0391b7e3d9ea9db6c0a8fbd0ca23f6 UnityEngine.GoogleAudioSpatializer.dll:UnityEngine.Experimental.Audio.Google.GvrAudioSourceExtension
 c8e0c9ae5ff0ebe7c2890c3d276cf2d4 Assembly-CSharp.dll:.RaycastController
-2454195afac2c0a353e07b52ecbc9194 Assembly-CSharp.dll:.GhostFollow
+d44e0099996a140213b077de03ee71c6 Assembly-CSharp.dll:.GhostFollow
 a4f0a4f62100f1a4fb5cbe0e00dde83f Unity.TextMeshPro.dll:TMPro.TextMeshProUGUI
 e8f850d5d5e05c49617691b61a5d345f Assembly-CSharp.dll:.Ferr2D_Path
 5fc094978ce3e3591a7500ed380d854a Unity.Analytics.DataPrivacy.dll:UnityEngine.Analytics.DataPrivacyButton
 ed169bd5d8e687caa093cfb66f5a32cc Assembly-CSharp.dll:Ferr.Example.Toss
 d251bf88db6c95a6b1aa0b69298da9ef UnityEngine.SpatialTracking.dll:UnityEngine.SpatialTracking.TrackedPoseDriver
 e278dfbd0b9f6ecf2b47b0093eaba0a8 Assembly-CSharp.dll:.ProgressSceneLoader
+cefaa6c58a8f7e3f78e20204937b9255 Assembly-CSharp.dll:.DialogueTrigger
 f432f2d53ebbc9c78e6b0c74d084f295 Assembly-CSharp.dll:Ferr.LogoLock
 d791aa6007fa3640be1164ea75bb087d Unity.TextMeshPro.dll:TMPro.TMP_StyleSheet
 c6666661329916e218bee7f5e79e60f5 Unity.TextMeshPro.dll:TMPro.TextMeshPro
@@ -184,8 +186,6 @@ e539e0c52882ccb004a38081281eca06 Assembly-CSharp.dll:.Ferr2DT_TerrainMaterial
 8649814970b42d345b89944b862453cc Unity.TextMeshPro.dll:TMPro.TMP_SubMesh
 681445fe16dcff37f22ad702fcf81080 Assembly-CSharp.dll:.Ferr2DT_Material
 72d60444af8dbf43e2f4803bcdaadd36 Assembly-CSharp.dll:.OptionsMenu
-71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.PlayerInput
-1ed9610582c5bd92e77a3d4103eaaeee Assembly-CSharp.dll:.CameraFollow
-9d638664d88c5583e7824db0c1f13ea0 Assembly-CSharp.dll:.DialogueManager
-cefaa6c58a8f7e3f78e20204937b9255 Assembly-CSharp.dll:.DialogueTrigger
 8a10d1fc6029b3f51d0abc87582fa9fd Assembly-CSharp.dll:.DialogueZone
+30f3213a6e218a461fa00e428f22d3eb Assembly-CSharp.dll:.PlayerInput
+eb3919739a716a1a185f1306a3629a37 Assembly-CSharp.dll:.CameraFollow

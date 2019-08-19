@@ -11,9 +11,6 @@ public class PlayerInput : MonoBehaviour
     public Animator animator;
 
     float horizontalSpeed = 0f;
-    float verticalSpeed = 0f;
-
-    bool attack = false;
 
     void Start()
     {
@@ -24,6 +21,7 @@ public class PlayerInput : MonoBehaviour
     void Update()
 
     {
+
         Vector3 characterScale = transform.localScale;
 
         if (Input.GetAxis("Horizontal") < 0)
@@ -38,7 +36,6 @@ public class PlayerInput : MonoBehaviour
         transform.localScale = characterScale;
 
         horizontalSpeed = Input.GetAxisRaw("Horizontal");
-        verticalSpeed = Input.GetAxisRaw("Vertical");
 
         animator.SetFloat("Speed", Mathf.Abs(horizontalSpeed));
 
@@ -54,11 +51,7 @@ public class PlayerInput : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Tab))
         {
-                if (!this.animator.GetCurrentAnimatorStateInfo(0).IsTag("Attack"))
-                {
-                    player.velocity.x = 0;
                     animator.SetTrigger("Attack");
-                }
         }
 
         Vector2 directionalInput = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));

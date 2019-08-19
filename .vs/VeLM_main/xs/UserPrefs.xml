@@ -1,5 +1,10 @@
 ﻿<Properties StartupConfiguration="{1C1D0066-50CE-B3C0-F0A1-DF82731BBD65}|">
-  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/ExtensionMethods.cs">
+    <Files>
+      <File FileName="Assets/Scripts/Enemy_Golem.cs" Line="13" Column="16" />
+      <File FileName="Assets/Scripts/ExtensionMethods.cs" Line="19" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
