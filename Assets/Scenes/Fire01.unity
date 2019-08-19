@@ -12904,16 +12904,6 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8919638556744608169, guid: 8b4421d5574a2429ca303197b9193eec,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1595089361}
-    - target: {fileID: 8919638556744608169, guid: 8b4421d5574a2429ca303197b9193eec,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: DisplayNextSentence
-      objectReference: {fileID: 0}
     - target: {fileID: 464032342381764531, guid: 8b4421d5574a2429ca303197b9193eec,
         type: 3}
       propertyPath: m_UiScaleMode
@@ -12938,6 +12928,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -156
+      objectReference: {fileID: 0}
+    - target: {fileID: 8919638556744608169, guid: 8b4421d5574a2429ca303197b9193eec,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1595089361}
+    - target: {fileID: 8919638556744608169, guid: 8b4421d5574a2429ca303197b9193eec,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: DisplayNextSentence
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8b4421d5574a2429ca303197b9193eec, type: 3}
@@ -14793,11 +14793,6 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 4
       objectReference: {fileID: 0}
-    - target: {fileID: 9185469175528788184, guid: 10524fff285aa6f4ba9392b5dfa31873,
-        type: 3}
-      propertyPath: animator
-      value: 
-      objectReference: {fileID: 996870032}
     - target: {fileID: 9185469175528788133, guid: 10524fff285aa6f4ba9392b5dfa31873,
         type: 3}
       propertyPath: maxHealth
@@ -14809,6 +14804,11 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9185469175528788133, guid: 10524fff285aa6f4ba9392b5dfa31873,
+        type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 996870032}
+    - target: {fileID: 9185469175528788184, guid: 10524fff285aa6f4ba9392b5dfa31873,
         type: 3}
       propertyPath: animator
       value: 
@@ -27086,11 +27086,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8913212361121523004, guid: 92aa459feab8aa14f8f8c3593b4cb4e7,
-        type: 3}
-      propertyPath: target
-      value: 
-      objectReference: {fileID: 334483139}
     - target: {fileID: 8913212361121523005, guid: 92aa459feab8aa14f8f8c3593b4cb4e7,
         type: 3}
       propertyPath: far clip plane
@@ -27101,6 +27096,11 @@ PrefabInstance:
       propertyPath: orthographic
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8913212361121523004, guid: 92aa459feab8aa14f8f8c3593b4cb4e7,
+        type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 334483139}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 92aa459feab8aa14f8f8c3593b4cb4e7, type: 3}
 --- !u!43 &1919446552
@@ -27719,6 +27719,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8497046171746284392, guid: 3c7c4d8f54a134acc95de9691c60cca1,
+        type: 3}
+      propertyPath: LayerMask.m_Bits
+      value: 1846
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3c7c4d8f54a134acc95de9691c60cca1, type: 3}
