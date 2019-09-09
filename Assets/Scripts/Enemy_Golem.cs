@@ -3,10 +3,10 @@ using System.Collections;
 
 public class Enemy_Golem : MonoBehaviour
 {
-    public float golemHealth = 10;
-    public float golemHit = 2;
+    public int golemHealth = 72;
+    public int golemHit = 36;
     public LayerMask LayerMask;
-    public float golemSpeed = 5;
+    public float golemSpeed = 5f;
     Rigidbody2D golemBody;
     Transform golemTrans;
     float golemWidth, golemHeight;
@@ -22,7 +22,7 @@ public class Enemy_Golem : MonoBehaviour
 
     void Update()
     {
-        Vector2 myVel = golemBody.velocity;
+        Vector2 golemVel = golemBody.velocity;
         Vector2 lineCastPos = golemTrans.position.toVector2() - golemTrans.right.toVector2() * golemWidth - Vector2.up * golemHeight;
         Debug.DrawLine(lineCastPos, lineCastPos + Vector2.down);
         bool isGrounded = Physics2D.Linecast(lineCastPos, lineCastPos + Vector2.down, LayerMask);
@@ -32,7 +32,7 @@ public class Enemy_Golem : MonoBehaviour
 
         if (!isGrounded || isBlocked)
         {
-           if (myVel.y >= .0f)
+           if (golemVel.y >= .0f)
             {
                 Vector3 currRot = golemTrans.eulerAngles;
                 currRot.y += 180;
@@ -40,7 +40,7 @@ public class Enemy_Golem : MonoBehaviour
            }
         }
        
-        myVel.x = -golemTrans.right.x * golemSpeed;
-        golemBody.velocity = myVel;
+        golemVel.x = -golemTrans.right.x * golemSpeed;
+        golemBody.velocity = golemVel;
     }
 }

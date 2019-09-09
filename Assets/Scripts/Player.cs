@@ -5,8 +5,8 @@ using System.Collections;
 [RequireComponent(typeof(PlayerInput))]
 public class Player : MonoBehaviour
 {
-    public float playerHealth = 10;
-    public float playerHit = 2;
+    public int playerHealth = 100;
+    public int playerHit = 8;
     
     public float maxJumpHeight = 4;
     public float minJumpHeight = 1;
